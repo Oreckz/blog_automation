@@ -1,6 +1,6 @@
 resource "digitalocean_droplet" "web" {
   name     = "${var.droplet_name}"
-  region   = "${var.droplet_region}}"
+  region   = "${var.droplet_region}"
   size     = "${var.droplet_size}"
   image    = "${var.droplet_image}"
   ssh_keys = ["${var.ssh_keys}"]
