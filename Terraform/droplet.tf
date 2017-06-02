@@ -3,7 +3,9 @@ resource "digitalocean_droplet" "web" {
   region   = "${var.droplet_region}"
   size     = "${var.droplet_size}"
   image    = "${var.droplet_image}"
-  ssh_keys = ["${var.ssh_keys}"]
+  ssh_keys = [
+    "${var.ssh_fingerprint}"
+  ]
 }
 
 output "Droplet IPv4 Addr" {

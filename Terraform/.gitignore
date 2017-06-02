@@ -1,2 +1,3 @@
 #Ignore keys
-terraform_key*
+terraform_do_key*
+init.sh

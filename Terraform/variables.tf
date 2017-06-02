@@ -30,6 +30,14 @@ variable "droplet_size" {
 }
 
 # SSH key ID to associate, passed at runtime
-variable "ssh_keys" {
+variable "ssh_fingerprint" {
+  type = "string"
+}
+
+variable "pub_ssh_key" {
+  type = "string"
+}
+
+variable "priv_ssh_key" {
   type = "string"
 }
