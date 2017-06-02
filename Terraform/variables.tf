@@ -1,7 +1,9 @@
 # TF variables for the infrastructure
 
 # This is given at runtime to avoid having API credentials on Git
-variable "do_token" {}
+variable "do_token" {
+  type = "string"
+}
 
 # OS Image used when creating the droplet
 variable "droplet_image" {
@@ -28,4 +30,6 @@ variable "droplet_size" {
 }
 
 # SSH key ID to associate, passed at runtime
-variable "ssh_keys" {}
+variable "ssh_keys" {
+  type = "string"
+}
